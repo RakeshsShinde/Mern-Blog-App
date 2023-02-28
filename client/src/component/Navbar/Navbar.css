@@ -1,0 +1,141 @@
+.topbar{
+    width: 100%;
+    height: 100px;
+     z-index: 1000;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding-top: 1.5rem;
+}
+
+.dropdown{
+    position: absolute;
+    top: 100px;
+}
+
+/* left navbar  */
+.left-nav{
+    flex: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.left-nav .left-nav-item link:hover{
+    color:#4361ee;
+}
+.left-nav-item{
+    display: flex;
+    gap: 4rem;
+    color: lightslategray;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 18px;
+}
+.middle-nav{
+    flex: 2;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.middle-nav input{
+      width: 70%;
+      border: 0.1px solid #808080;
+      padding: 5px 10px;
+      border-radius: 7px;
+      outline: none;
+}
+
+.right-nav{
+   flex: 3;
+   display: flex;
+   justify-content: center;
+  
+   padding: 10px;
+   
+}
+
+.search-icons{
+    color: lightslategrey;
+    cursor: pointer;
+}
+
+
+
+.profile{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.cat{
+    display: flex;
+    
+    gap: 0.1rem;
+    
+    
+}
+
+
+.cat .btn{
+   height: 30px;
+   align-self: center;
+}
+
+.loginbtn{
+    border: none;
+    padding: 3px 5px;
+    border-radius: 5px;
+    color: #000000;
+    font-family: 'inter',sans-serif;
+    background-color: transparent;
+    text-transform: capitalize;
+    font-size: 16px;
+    
+
+}
+
+
+.loginbtn:hover{
+    color: #4361ee;
+    transition: ease-in 2s ease-in-out;
+}
+
+.btngrp{
+    display: flex;
+    align-items: center;
+    width:150px;
+    justify-content: space-between;
+}
+
+
+.registerbtn{
+    border: none;
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: #000000;
+    font-family: 'inter',sans-serif;
+    background-color: transparent;
+    text-transform: capitalize;
+    font-size: 16px;
+    border: 1px solid #4361ee;
+}
+
+.registerbtn:hover{
+    color: white;
+    background-color: #4361ee;
+  
+    transition: ease-in 2s ease-in-out;
+}
+
+.divider{
+    height: 80%;
+    border-left: 1px solid gray;
+}

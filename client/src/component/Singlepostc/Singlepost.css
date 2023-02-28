@@ -1,0 +1,163 @@
+.singlepost {
+    flex: 9;
+    padding: 10px;
+}
+
+.singlepostwrapper {
+    padding: 50px;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.singlepostcontent {
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.basic-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 15px;
+    padding: 0 10px;
+    flex-direction: column;
+}
+
+.author {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.singlepostimg {
+    width: 100%;
+    height: 500px;
+    border-radius: 5px;
+    object-fit: cover;
+
+}
+
+.singleposttitle {
+    text-align: left;
+    margin: 50px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    max-width: 800px;
+
+
+
+}
+
+.singleposttitleinput {
+    margin: 50px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    max-width: 1000px;
+    border: none;
+    border-bottom: 1px solid rgb(93, 91, 91);
+}
+
+.singleposttitleinput:focus {
+    outline: none;
+}
+
+.singlepostedit {
+    float: right;
+    font-size: 18px;
+    display: flex;
+}
+
+.singleposticon {
+    margin-left: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.editbtn {
+    color: #0362fc;
+}
+
+.deletebtn {
+    color: #fc2133;
+}
+
+
+.singlepostinfo {
+    margin-bottom: 20px;
+    display: flex;
+    margin-top: 35px;
+    font-size: 16px;
+    color: #40504B;
+    padding: 5px 15px;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.author-info h1 {
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.author-info p {
+    font-weight: 300;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+
+.user-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.singlepostDesc {
+    color: #666;
+    font-size: 18px;
+    line-height: 36px;
+    padding: 20px;
+}
+
+.singlepostDescinput {
+    color: #666;
+    font-size: 18px;
+    line-height: 36px;
+    padding: 20px;
+}
+
+.singlepostDescinput:focus {
+    outline: none;
+}
+
+.singlepostDesc::first-letter {
+    margin-left: 25px;
+    font-size: 35px;
+    font-weight: 500;
+    color: lightseagreen;
+    text-transform: capitalize;
+}
+
+.updatebtn {
+    width: 100px;
+    border: none;
+    background-color: teal;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: 20px;
+}

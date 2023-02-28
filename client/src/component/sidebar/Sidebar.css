@@ -1,0 +1,90 @@
+.sidebar{
+    flex: 3;
+    margin: 20px;
+    padding-bottom: 30px;
+    background-color: #fdfbfb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.sidebarsocial{
+    display: flex;
+
+}
+
+.sidebaritem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebartitle{
+    margin: 10px;
+    padding: 5px;
+    width: 80%;
+    border-top:1px solid #a7a4a4 ;
+    border-bottom: 1px solid #a7a4a4;
+    font-family: 'Varela', sans-serif;
+    font-size: 14px;
+    color: #222;
+    font-weight: 600;
+    text-align: center;
+    line-height: 20px;
+}
+
+.sidebaritem > img{
+    margin-top: 30px;
+    border-radius: 7px;
+    padding: 25px;
+    width: 100%;
+    height: 300px;
+}
+
+.sidebaritem > p{
+    padding: 30px;
+}
+
+.sidebarlist{
+    margin-bottom: 30px;
+   margin-left: 50px;
+}
+
+.sidebarlistitem{
+    display: inline-block;
+    width: 50%;
+    margin-top: 15px;
+    cursor: pointer;
+   
+}
+
+.sidebarsocial{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    gap: 1rem;
+}
+
+.topicons{
+    transition: cubic-bezier(0.645, 0.045, 0.355, 1) all ease-in;
+    cursor: pointer;
+}
+
+
+.insta{
+    color: crimson;
+}
+.twitter{
+    color: #00E7FF;
+
+}
+
+.whatsapp{
+    color: #0aa41c;
+}
+
+.link{
+    color: #0d70e1;
+}
+

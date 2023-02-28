@@ -1,0 +1,15 @@
+.posts {
+    flex: 9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 10px;
+
+}
+
+.conatainer {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
