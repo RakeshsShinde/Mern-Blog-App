@@ -1,29 +1,27 @@
-.header{
-  
-}
+.header {}
 
-.headertitles{
+.headertitles {
     display: flex;
     align-items: center;
-    
+
 
 
 }
 
-.tyewriter-text{
-     color:#444;
-     font-family: 'Hanken Grotesk', sans-serif;
-     
-     
+.tyewriter-text {
+    background-image: radial-gradient(circle 300px at 8% 89.3%, rgba(20, 157, 208, 1) 0%, rgba(140, 63, 226, 1) 90%);
+    font-family: 'Hanken Grotesk', sans-serif;
+
+
 }
 
-.headertitle1{
+.headertitle1 {
     position: absolute;
     top: 35%;
     left: 10%;
     font-size: 50px;
     letter-spacing: 0.2rem;
-    color: #263159;;
+
     font-family: 'Lato', sans-serif;
     z-index: 5;
 
@@ -33,16 +31,26 @@
 
 
 
-.headertitle1 h1{
-    color: gray;
+.headertitle1 h1 {
+    color: #504A4B;
     font-size: 65px;
-     
+
 }
 
-.header img{
+.headertitle1 span {
+    font-weight: 500;
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.header img {
     height: 700px;
     width: 100%;
     object-fit: cover;
-    
-    
+
+
 }
