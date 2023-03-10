@@ -42,7 +42,7 @@ users is fully secured becuase user  secret credientials i.e password store in d
 
 ![Screenshot 2023-03-10 11 13 11](https://user-images.githubusercontent.com/84784475/224233390-df6ebda1-8855-447a-a5bf-4cccade624cd.png)
 
-#### post page :
+#### Post page :
 we can filter the particular user post by clicking on user name 
 
 ![Screenshot 2023-03-10 11 16 41](https://user-images.githubusercontent.com/84784475/224233785-8ce8690f-3e83-427c-98b7-23757ff0f7a0.png)
@@ -52,7 +52,7 @@ also,filter by category :
 ![Screenshot 2023-03-10 11 18 12](https://user-images.githubusercontent.com/84784475/224234248-47aa5cc4-d568-4047-a6ce-5fe3c844533b.png)
 
 
-#### write page/create blog :
+#### Write Blog/create Blog :
 if user have register with system and have logged in ,then user  can create blog post 
 
 ![Screenshot 2023-03-10 11 27 50](https://user-images.githubusercontent.com/84784475/224235758-55d776d3-2f2e-49e4-9b3c-382f3c06526b.png)
