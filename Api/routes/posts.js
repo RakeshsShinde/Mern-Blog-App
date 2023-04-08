@@ -16,7 +16,6 @@ router.post('/', async (req, res) => {
 
 
 //update the post 
-
 router.put("/:id", async (req, res) => {
     try {
 
@@ -41,7 +40,7 @@ router.put("/:id", async (req, res) => {
     }
 })
 
-
+// delete the post
 router.delete("/:id", async (req, res) => {
     try {
 
@@ -75,21 +74,23 @@ router.get("/:id", async (req, res) => {
     }
 })
 
-
+//get all posts and filter the posts
 router.get("/", async (req, res) => {
-    const username = req.query.user;
+    const username = req.query.username;
     const catName = req.query.cat;
+    const searchQuery = req.query.search;
     try {
         let posts;
         if (username) {
             posts = await Post.find({ username })
         }
+
         else if (catName) {
-            posts = await Post.find({
-                category: {
-                    $in: [catName]
-                }
-            })
+            posts = await Post.find({ category: catName })
+        }
+        else if (searchQuery) {
+            const regex = new RegExp(searchQuery, "i");
+            posts = await Post.find({ $or: [{ title: regex }, { desc: regex }] })
         }
         else {
             posts = await Post.find();

@@ -26,7 +26,7 @@ router.put('/:id', async (req, res) => {
 })
 
 
-//delete the users 
+//delete the user
 
 router.delete("/:id", async (req, res) => {
     if (req.body.userId === req.params.id) {
@@ -48,7 +48,7 @@ router.delete("/:id", async (req, res) => {
     }
 })
 
-//get the users 
+//get the user
   router.get("/:id",async(req,res)=>{
     try {
      const user=await User.findById(req.params.id);

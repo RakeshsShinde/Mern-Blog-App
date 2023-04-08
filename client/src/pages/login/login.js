@@ -27,8 +27,6 @@ const Login = () => {
 
   return (
     <div className='main-conatiner'>
-
-
       <div className="container">
         <input type="checkbox" id="flip" />
         <div className="cover">

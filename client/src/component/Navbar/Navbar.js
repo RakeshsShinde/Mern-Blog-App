@@ -1,18 +1,18 @@
-
-
 import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import { BiSearch } from 'react-icons/bi';
 import { RiArrowDropDownLine } from 'react-icons/ri'
-import profileimg from '../../images/messi.jpg'
+import { useHistory } from 'react-router-dom'
 import Dropdown from '../dropdown/Dropdown';
 import { Context } from '../../context/Context';
+
 function Navbar() {
     const [query, setquery] = useState("");
     const { user, dispatch } = useContext(Context)
     const [dropdown, setdropdown] = useState(true);
     const pf = "http://localhost:5000/images/";
+    const history = useHistory();
     const hadlelogout = () => {
         dispatch({ type: "LOG_OUT" })
     }
@@ -23,8 +23,20 @@ function Navbar() {
     const mouseleave = () => {
         setdropdown(false);
     }
+    const handleclick = (value) => {
+        if (value) {
+            history.push(`/?search=${value}`);
+        }
+    }
 
-    console.log(query);
+    const handleSearch = (value) => {
+        if (value) {
+            setquery(value)
+            history.push(`/?search=${value}`);
+            setquery("");
+        }
+    }
+
     return (
         <div className='topbar'>
 
@@ -50,8 +62,8 @@ function Navbar() {
             </div>
             <div className='middle-nav'>
                 <input type='serach' name='search-input' placeholder='serach here..'
-                    onChange={e => setquery(e.target.value)}></input>
-                <BiSearch className='search-icons' size={20}></BiSearch>
+                    onChange={e => handleSearch(e.target.value)}></input>
+                <BiSearch className='search-icons' size={20} onClick={handleclick(query)} ></BiSearch>
             </div>
             <div className='right-nav'>
                 {user ?
@@ -63,7 +75,6 @@ function Navbar() {
                         <div className='divider'></div>
                         <Link to='/register' className='registerbtn'>sing up</Link>
                     </div>
-
                 }
 
             </div>

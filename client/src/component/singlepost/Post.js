@@ -13,14 +13,17 @@ const Post = ({ post }) => {
         }
         getcat()
     }, [])
+
     return (
         <div className='post'>
-            {post.photo && (
-                <img src={pf + post.photo}
-                    className='postimg'
-                    alt='messi.jpg'>
-                </img>
-            )}
+            <Link to={`/post/${post._id}`}>
+                {post.photo && (
+                    <img src={pf + post.photo}
+                        className='postimg'
+                        alt='messi.jpg'>
+                    </img>
+                )}
+            </Link>
             <div className='post-info'>
                 <div className='postcats'>
                     <Link to={`/?cat=${post.category}`}>
@@ -33,7 +36,7 @@ const Post = ({ post }) => {
                 </Link>
                 <hr />
                 <div className='user-info'>
-                    <Link to={`/?user=${post.username}`}>
+                    <Link to={`/?username=${post.username}`}>
                         <span className='postuser'>{post.username}</span>
                     </Link>
                     <span className='postDate'>{new Date(post.createdAt).toDateString()}</span>

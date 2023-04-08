@@ -13,16 +13,16 @@ const Write = () => {
     const [file, setfile] = useState(null);
     const [cat, setcat] = useState("");
     const { user } = useContext(Context)
-    
-   
+
+
     const handlesubmit = async (e) => {
         e.preventDefault();
         const newPost = {
             username: user.username,
             title,
             desc,
-            category:cat,
-            userprofile:user.userprofile,
+            category: cat,
+            userprofile: user.userprofile,
 
         }
         if (file) {
@@ -81,32 +81,32 @@ const Write = () => {
                     <h1 className='cat-head'>choose category</h1>
                     <div className='radioinput'>
                         <input type={'radio'} name='cat' value="technology"
-                        onChange={e=>setcat(e.target.value)}/>
+                            onChange={e => setcat(e.target.value)} />
                         <label >technology</label>
                     </div>
                     <div className='radioinput'>
                         <input type={'radio'} name='cat' value="sports"
-                         onChange={e=>setcat(e.target.value)}/>
+                            onChange={e => setcat(e.target.value)} />
                         <label >sports</label>
                     </div>
                     <div className='radioinput'>
                         <input type={'radio'} name='cat' value="music"
-                         onChange={e=>setcat(e.target.value)}/>
+                            onChange={e => setcat(e.target.value)} />
                         <label >music</label>
                     </div>
                     <div className='radioinput'>
                         <input type={'radio'} name='cat' value="politics"
-                         onChange={e=>setcat(e.target.value)}/>
+                            onChange={e => setcat(e.target.value)} />
                         <label >politics</label>
                     </div>
                     <div className='radioinput'>
                         <input type={'radio'} name='cat' value="Agriculture"
-                         onChange={e=>setcat(e.target.value)}/>
+                            onChange={e => setcat(e.target.value)} />
                         <label >Agriculture</label>
                     </div>
                     <div className='radioinput'>
                         <input type={'radio'} name='cat' value="Science"
-                         onChange={e=>setcat(e.target.value)}/>
+                            onChange={e => setcat(e.target.value)} />
                         <label >Science</label>
                     </div>
                 </div>

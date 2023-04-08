@@ -1,18 +1,12 @@
-
-.write{
+.write {
     padding: 50px;
-    /* background:url('../../images/bg1.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
-    
     background-color: #f8f9fa;
     min-height: 1200px;
- 
+
 }
 
 
-.writeimg{
+.writeimg {
     margin-left: 150px;
     width: 70vw;
     height: 400px;
@@ -20,25 +14,25 @@
     object-fit: cover;
 }
 
-.left-form{
+.left-form {
     margin-left: 150px;
     display: flex;
     flex-direction: column;
     gap: 2rem;
     flex: 7;
     width: 100%;
-    
+
 }
 
-.file-select{
+.file-select {
     display: flex;
     align-items: center;
     gap: 1rem;
-  
-  
+
+
 }
 
-.file-select input[type='text']{
+.file-select input[type='text'] {
     padding: 2px 7px;
     background-color: transparent;
     width: 75%;
@@ -46,52 +40,53 @@
     border: 1px solid #a5a5a5;
     border-radius: 5px;
 }
-.writeform{
+
+.writeform {
     display: flex;
     margin-top: 50px;
 }
 
 
-.writeicon{
+.writeicon {
     width: 25px;
     height: 25px;
     color: #008000;
     cursor: pointer;
 }
 
-.editorcontainer{
+.editorcontainer {
     max-width: 700px;
     height: 300px;
     overflow: scroll;
     border: 1px solid lightgray;
-    
-   
+
+
 }
 
-.editorcontainer::-webkit-scrollbar{
+.editorcontainer::-webkit-scrollbar {
     display: none;
 }
 
-.editor{
+.editor {
     height: 100%;
     border: none;
 }
 
 
-.right-form{
+.right-form {
     flex: 5;
-    
+
     padding: 10px;
     margin-right: 10px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    font-family: 'poppins',sans-serif;
+    font-family: 'poppins', sans-serif;
     font-size: 18px;
-    
+
 }
 
-.category-grp{
+.category-grp {
     flex: 4;
     margin-left: 30px;
     width: 100%;
@@ -103,33 +98,27 @@
     padding: 10px;
 }
 
-.radioinput{
+.radioinput {
     display: flex;
     gap: 0.7rem;
     align-items: center;
     color: #004e98;
     margin-block: 10px;
-    
+
 }
 
-
-
-
-
-
-.writesubmit{
-   margin-right: 20px;
+.writesubmit {
+    margin-right: 20px;
     border: none;
     padding: 5px 10px;
     border-radius: 10px;
     color: white;
-    font-family: 'poppins',sans-serif;
+    font-family: 'poppins', sans-serif;
     background-color: #3a86ff;
 
 }
 
-.writesubmit:hover{
-  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  background-color: #3a0ca3;
+.writesubmit:hover {
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: #3a0ca3;
 }
-

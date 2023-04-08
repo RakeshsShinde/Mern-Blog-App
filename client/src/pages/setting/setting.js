@@ -5,16 +5,16 @@ import { FiEdit2 } from 'react-icons/fi'
 import { Context } from '../../context/Context';
 import axios from 'axios';
 const Setting = () => {
-    const { user,dispatch } = useContext(Context)
+    const { user, dispatch } = useContext(Context)
     const [username, setusername] = useState("");
     const [email, setemail] = useState("");
     const [password, setpassword] = useState("");
     const [file, setfile] = useState(null);
     const [success, setsuccess] = useState(false);
-    const pf="http://localhost:5000/images/";
+    const pf = "http://localhost:5000/images/";
     const handlesubmit = async (e) => {
         e.preventDefault();
-        dispatch({type:"UPDATE_START"})
+        dispatch({ type: "UPDATE_START" })
         const updatedUser = {
             userId: user._id,
             username,
@@ -36,24 +36,21 @@ const Setting = () => {
             }
         }
         try {
-            const res=await axios.put("/users/" + user._id, updatedUser)
+            const res = await axios.put("/users/" + user._id, updatedUser)
             setsuccess(true)
-            dispatch({type:"UPDATE_SUCCESS",payload:res.data})
+            dispatch({ type: "UPDATE_SUCCESS", payload: res.data })
         } catch (error) {
-           dispatch({type:"UPDATE_FAILURE"})
+            dispatch({ type: "UPDATE_FAILURE" })
         }
     }
     return (
         <div className='setting'>
             <div className='settingwrapper'>
                 <div className='setting-title'>
-
-
                 </div>
-
                 <form className='setting-form' onSubmit={handlesubmit}>
 
-                    <img src={file?URL.createObjectURL(file):pf+user.profilepic} alt='profile'
+                    <img src={file ? URL.createObjectURL(file) : pf + user.profilepic} alt='profile'
                         className='profile-img' />
                     <div className='editprofile'>
                         <label htmlFor='fileinput'>

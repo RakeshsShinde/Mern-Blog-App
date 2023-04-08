@@ -6,25 +6,17 @@ import Single from './pages/Single/Single';
 import Home from './pages/home/Home';
 import Write from './pages/write/write';
 import Setting from './pages/setting/setting';
-import {
-  BrowserRouter as Router,
-  // Link,
-  Switch,
-  Route
-} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Login from './pages/login/login';
 import Register from './pages/register/register';
 import { useContext } from 'react';
 import { Context } from './context/Context';
-
-
 function App() {
   const { user } = useContext(Context)
   return (
     <Router>
       <div className="App">
         <Navbar />
-
         <Switch>
           <Route exact path='/'>
             <Home />
@@ -41,17 +33,10 @@ function App() {
           <Route path='/post'>
             <Single />
           </Route>
-
           <Route path='/register'>
             <Register />
           </Route>
         </Switch>
-
-
-
-
-
-
       </div>
     </Router>
   );

@@ -12,37 +12,11 @@ const INITIAL_STATE = {
 export const Context = createContext(INITIAL_STATE)
 
 export const ContextProvider = ({ children }) => {
-
-
-    //
-    // const [posts, setposts] = useState([]);
-
-
-    // useEffect(() => {
-    //     const fetchposts = async () => {
-    //         const res = await axios.get("/posts")
-    //         setposts(res.data);
-    //     }
-    //     fetchposts()
-    // }, [])
-
-
     const [state, dispatch] = useReducer(reducer, INITIAL_STATE)
 
     useEffect(() => {
         localStorage.setItem("user", JSON.stringify(state.user))
     }, [state.user])
-
-
-    // const [postState, postDispatch] = useReducer(postReducer, {
-    //      posts:posts,
-    //     SerachQuery: " ",
-    // })
-
-
-
-
-
 
 
     return (
@@ -51,8 +25,6 @@ export const ContextProvider = ({ children }) => {
             isFetching: state.isFetching,
             error: state.error,
             dispatch,
-            // postState,
-            // postDispatch,
         }}>
             {children}
         </Context.Provider>

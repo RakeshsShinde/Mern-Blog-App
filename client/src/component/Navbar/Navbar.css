@@ -5,7 +5,6 @@
     position: sticky;
     top: 0;
     background-color: #003366;
-
     opacity: 0.97;
     display: flex;
     align-items: center;
@@ -47,6 +46,7 @@
     gap: 0.5rem;
     align-items: center;
     margin-top: 5px;
+    color: black;
 }
 
 .middle-nav input {
@@ -61,7 +61,6 @@
     flex: 3;
     display: flex;
     justify-content: center;
-
     padding: 10px;
 
 }

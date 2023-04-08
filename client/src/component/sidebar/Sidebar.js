@@ -32,9 +32,6 @@ const Sidebar = () => {
                             <li className='sidebarlistitem'>{c.name}</li>
                         </Link>
                     ))}
-
-
-
                 </ul>
             </div>
             <div className='sidebaritem'>
